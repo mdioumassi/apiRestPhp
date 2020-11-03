@@ -1,0 +1,50 @@
+version: "3.1"
+services:
+    webserver:
+        build:
+            context: ./bin/php
+        container_name: apirest
+        restart: 'always'
+        ports: 
+            - "8001:80"
+        links:
+            - database
+        volumes:
+            - ./www:/var/www/html
+            - ./config/php/php.ini:/usr/local/etc/php/php.ini
+            - ./config/vhosts:/etc/apache2/sites-enabled
+            - /logs/apache2:/var/log/apache2
+    database:
+        build:
+            context: ./bin/mysql
+        container_name: apirest-database
+        restart: always
+#        image: mysql:8.0
+        ports: 
+            - "3306:3306"
+        volumes:
+            - ./data/mysql:/var/lib/mysql
+            - ./logs/mysql:/var/log/mysql
+        environment:
+            MYSQL_DATABASE: weather_city
+            MYSQL_USER: root
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: test
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: apirest-phpmyadmin
+        links: 
+            - database
+        ports:
+            - 8000:80
+        environment:
+            PMA_HOST: database
+            PMA_PORT: 3306
+            PMA_USER: root
+            PMA_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: test
+            MYSQL_USER: root
+            MYSQL_PASSWORD: test
+        volumes:
+            - /sessions
+            - ./config/php/php.ini:/usr/local/etc/php/conf.d/php-phpmyadmin.ini

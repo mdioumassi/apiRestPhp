@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0702b6e4-edac-4eda-a6a7-0e6c282bb072" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jY2F5RDekDIadU4yfJzt1QJ7DC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
+    <property name="database.data.extractors.current.id" value="SQL Inserts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/www/page" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/page" />
+      <recent name="$PROJECT_DIR$/config/db" />
+      <recent name="$PROJECT_DIR$/www/weathers" />
+      <recent name="$PROJECT_DIR$/mysql" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0702b6e4-edac-4eda-a6a7-0e6c282bb072" name="Default Changelist" comment="" />
+      <created>1603966597863</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603966597863</updated>
+      <workItem from="1603966599012" duration="12969000" />
+      <workItem from="1604002231156" duration="111000" />
+      <workItem from="1604088506592" duration="362000" />
+      <workItem from="1604095582524" duration="12371000" />
+      <workItem from="1604184576188" duration="17100000" />
+      <workItem from="1604262851410" duration="995000" />
+      <workItem from="1604321827768" duration="3218000" />
+      <workItem from="1604413216610" duration="16473000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1955" y="235" width="732" height="644" key="#Inspections" timestamp="1604191890837">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1955" y="235" width="732" height="644" key="#Inspections/1366.0.1920.1080/72.27.1294.741@1366.0.1920.1080" timestamp="1604191890837" />
+    <state x="1622" y="352" width="1397" height="410" key="#SQL_Dialects" timestamp="1604096740555">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1622" y="352" width="1397" height="410" key="#SQL_Dialects/1366.0.1920.1080/72.27.1294.741@1366.0.1920.1080" timestamp="1604096740555" />
+    <state x="314" y="45" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603971976420">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="314" y="45" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/1366.0.1920.1080/72.27.1294.741@72.27.1294.741" timestamp="1603971976420" />
+    <state x="2073" y="408" width="495" height="297" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603973202469">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2073" y="408" width="495" height="297" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1366.0.1920.1080/72.27.1294.741@1366.0.1920.1080" timestamp="1603973202469" />
+    <state x="2109" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1604187703269">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2109" y="311" width="424" height="491" key="FileChooserDialogImpl/1366.0.1920.1080/72.27.1294.741@1366.0.1920.1080" timestamp="1604187703269" />
+    <state x="450" y="87" width="559" height="544" key="NewPhpClassDialog" timestamp="1604322280029">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="1927" y="87" key="NewPhpClassDialog/1366.0.1920.1080/72.27.1294.741@1366.0.1920.1080" timestamp="1603972557524" />
+    <state x="450" y="87" width="543" height="607" key="NewPhpClassDialog/1366.0.1920.1080/72.27.1294.741@72.27.1294.741" timestamp="1603969304309" />
+    <state x="450" y="87" width="559" height="544" key="NewPhpClassDialog/72.27.1294.741@72.27.1294.741" timestamp="1604322280029" />
+    <state x="1366" y="490" width="668" height="164" key="NewPhpFileDialog" timestamp="1604444290537">
+      <screen x="72" y="27" width="3214" height="1053" />
+    </state>
+    <state x="2121" y="475" width="399" height="164" key="NewPhpFileDialog/1366.0.1920.1080/72.27.1294.741@1366.0.1920.1080" timestamp="1603978798670" />
+    <state x="1366" y="490" width="668" height="164" key="NewPhpFileDialog/72.27.3214.1053@72.27.3214.1053" timestamp="1604444290537" />
+    <state x="208" y="19" width="1022" height="737" key="SettingsEditor" timestamp="1603966610550">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="208" y="19" width="1022" height="737" key="SettingsEditor/1366.0.1920.1080/72.27.1294.741@72.27.1294.741" timestamp="1603966610550" />
+    <state x="1691" y="312" width="796" height="490" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604097595522">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1691" y="312" width="796" height="490" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1366.0.1920.1080/72.27.1294.741@1366.0.1920.1080" timestamp="1604097595522" />
+    <state x="411" y="107" width="616" height="554" key="find.popup" timestamp="1603969747775">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="411" y="107" width="616" height="554" key="find.popup/1366.0.1920.1080/72.27.1294.741@72.27.1294.741" timestamp="1603969747775" />
+    <state x="1826" y="90" width="998" height="989" key="search.everywhere.popup" timestamp="1604153660205">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1826" y="90" width="998" height="989" key="search.everywhere.popup/1366.0.1920.1080/72.27.1294.741@1366.0.1920.1080" timestamp="1604153660205" />
+    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup/1366.0.1920.1080/72.27.1294.741@72.27.1294.741" timestamp="1603967562388" />
+    <state x="444" y="291" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603969338774">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="444" y="291" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/1366.0.1920.1080/72.27.1294.741@72.27.1294.741" timestamp="1603969338774" />
+  </component>
+</project>
