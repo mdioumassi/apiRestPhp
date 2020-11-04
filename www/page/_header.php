@@ -17,6 +17,6 @@
     </style>
 </head>
 <body>
-<div class="jumbotron text-center" style="margin-bottom:0">
-    <h1>Gestion Méteo</h1>
-</div>
+<!--<div class="jumbotron text-center" style="margin-bottom:0">-->
+<!--    <h1>Gestion Méteo</h1>-->
+<!--</div>-->
