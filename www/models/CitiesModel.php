@@ -105,30 +105,25 @@ class CitiesModel
     }
 
     /**
-     * Mettre à jour un produit
      *
      * @return void
      */
-    public function modifier(){
+    public function putCity(){
         // On écrit la requête
-        $sql = "UPDATE " . $this->table . " SET nom = :nom, prix = :prix, description = :description, categories_id = :categories_id WHERE id = :id";
+        $sql = "UPDATE " . $this->table . " SET city_label = :city_label, country = :country WHERE city_id = :city_id";
 
         // On prépare la requête
         $query = $this->connexion->prepare($sql);
 
         // On sécurise les données
-        $this->nom=htmlspecialchars(strip_tags($this->nom));
-        $this->prix=htmlspecialchars(strip_tags($this->prix));
-        $this->description=htmlspecialchars(strip_tags($this->description));
-        $this->categories_id=htmlspecialchars(strip_tags($this->categories_id));
-        $this->id=htmlspecialchars(strip_tags($this->id));
+        $this->city_label = htmlspecialchars(strip_tags($this->city_label));
+        $this->country = htmlspecialchars(strip_tags($this->country));
+        $this->city_id = htmlspecialchars(strip_tags($this->city_id));
 
         // On attache les variables
-        $query->bindParam(':nom', $this->nom);
-        $query->bindParam(':prix', $this->prix);
-        $query->bindParam(':description', $this->description);
-        $query->bindParam(':categories_id', $this->categories_id);
-        $query->bindParam(':id', $this->id);
+        $query->bindParam(':city_label', $this->city_label);
+        $query->bindParam(':country', $this->country);
+        $query->bindParam(':city_id', $this->city_id);
 
         // On exécute
         if($query->execute()){
