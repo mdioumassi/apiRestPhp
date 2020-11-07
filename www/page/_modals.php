@@ -18,7 +18,7 @@
             </div>
             <!-- Modal body -->
             <div class="modal-body">
-                <form name="formCity" onsubmit="return validateForm()">
+                <form id="formCity">
                     <div class="form-group">
                         <input type="text" class="form-control form-control-sm" placeholder="Nom du pays" name="country" required>
                     </div>
