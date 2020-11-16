@@ -6,10 +6,12 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    include_once "../conf/Database.php";
+    include_once "../conf/ConnexionBD.php";
     include_once "../models/CitiesModel.php";
 
-    $db = (new Database())->getConnection();
+    // $db = (new Database())->getConnection();
+    $instance = ConnexionBD::getInstance();
+    $db = $instance->getConnextion();
     $citiesModel = new CitiesModel($db);
     if (!empty($_GET["city_id"])) {
         $cityId = $_GET["city_id"];
@@ -18,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         http_response_code(200);
         echo json_encode($city);
     }
-
 } else {
     // On gère l'erreur
     http_response_code(405);

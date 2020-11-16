@@ -21,6 +21,7 @@ class Weathers {
                     '            <th>Temp</th>\n' +
                     '            <th>Précipitation</th>\n' +
                     '            <th>Humidité</th>\n' +
+                    '            <th>Vent</th>\n' +
                     '            <th>Date</th>\n' +
                     '            <th>Actions</th>\n' +
                     '        </tr>\n' +
@@ -34,6 +35,7 @@ class Weathers {
                         '<td>' + weather.weather + '</td>' +
                         '<td>' + weather.precipitation + '</td>' +
                         '<td>' + weather.humidity + '</td>' +
+                        '<td>' + weather.wind + '</td>' +
                         '<td>' + weather.date + '</td>' +
                         '<td>' +
                         '<button type="button" class="btn btn-link">Modifier</button> | ' +
@@ -42,7 +44,7 @@ class Weathers {
                 }
                 HTML += "</tbody></table>";
                 //console.log(HTML);
-                document.querySelector('#myModalWeather .modal-body').innerHTML = HTML
+                document.querySelector('#myModalWeather .modal-body').innerHTML = HTML;
                 $("#myModalWeather").modal();
             })
             .catch((error) => {

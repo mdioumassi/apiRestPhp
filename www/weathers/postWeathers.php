@@ -5,15 +5,19 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    include_once "../conf/Database.php";
+    include_once "../conf/ConnexionBD.php";
     include_once "../models/WeathersModel.php";
 
-    $db = (new Database())->getConnection();
+    //$db = (new Database())->getConnection();
+    $instance = ConnexionBD::getInstance();
+    $db = $instance->getConnextion();
     $weather = new WeathersModel($db);
 
     $data = json_decode(file_get_contents("php://input"));
-    if (!empty($_GET["cityId"]) && !empty($data->temperature) && !empty($data->weather)
-            && !empty($data->precipitation) && !empty($data->humidity) && !empty($data->wind)) {
+    if (
+        !empty($_GET["cityId"]) && !empty($data->temperature) && !empty($data->weather)
+        && !empty($data->precipitation) && !empty($data->humidity) && !empty($data->wind)
+    ) {
         $weather->city_id = $_GET["cityId"];
         $weather->temperature = $data->temperature;
         $weather->weather = $data->weather;
@@ -25,7 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         http_response_code(201);
         echo json_encode(["message" => "L'ajout a été effectué"]);
     }
-
 } else {
     // On gère l'erreur
     http_response_code(405);

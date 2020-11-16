@@ -3,12 +3,12 @@ cities.getCities("/cities");
 
 
 //Bouton affichant le modal d'ajout d'une ville
-document.getElementById("ajouter").addEventListener("click", function() {
+document.getElementById("ajouter").addEventListener("click", () => {
     $("#myModalPost").modal();
 });
 
 //On soumet le formulaire d'ajout
-document.getElementById("formCity").addEventListener("submit", function(event) {
+document.getElementById("formCity").addEventListener("submit", (event) => {
     event.preventDefault();
     let country = document.forms["formCity"]['country'].value;
     let cityLabel = document.forms["formCity"]['city_label'].value;
@@ -20,7 +20,7 @@ document.getElementById("formCity").addEventListener("submit", function(event) {
 });
 
 // On soumet les modifications
-document.getElementById("formCityUpdate").addEventListener("submit", function(event) {
+document.getElementById("formCityUpdate").addEventListener("submit", (event) => {
     event.preventDefault();
 
     let cityId = document.forms["formCityUpdate"]['city_id'].value;
@@ -35,18 +35,22 @@ document.getElementById("formCityUpdate").addEventListener("submit", function(ev
 });
 
 //PUT
-function updateCity(cityId) {
+const updateCity = (cityId) => {
     $("#myModalPut").modal();
     cities.putModalCity("/cities/", cityId);
 }
 
 //DELETE
-function deleteCity(cityId) {
+const deleteCity = (cityId) => {
     cities.deleteCity("/cities/deleteCity.php", cityId)
 }
 
 //MODAL SHOW
-function showCity(cityId) {
-    $("#myModal").modal();
-    cities.getCity("/cities/", cityId);
+const showCity = (cityId) => {
+    //$("#myModal").modal();
+    let weathers = new Weathers("http://localhost:8001");
+    weathers.getWeathersByCityId("/cities/", cityId + "/weather");
+    //window.location.href = weathers.url + "/page/meteos.php";
+    //console.log(weathers);
+    // cities.getCity("/cities/", cityId);
 }

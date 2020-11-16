@@ -6,14 +6,16 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 if ($_SERVER['REQUEST_METHOD'] == 'PUT') {
-    include_once "../conf/Database.php";
+    include_once "../conf/ConnexionBD.php";
     include_once "../models/CitiesModel.php";
 
-    $db = (new Database())->getConnection();
+    //$db = (new Database())->getConnection();
+    $instance = ConnexionBD::getInstance();
+    $db = $instance->getConnextion();
     $city = new CitiesModel($db);
 
     $data = json_decode(file_get_contents("php://input"));
-  
+
     if (!empty($data->city_id) && !empty($data->country) && !empty($data->city_label)) {
         $city->city_id = $data->city_id;
         $city->country = $data->country;

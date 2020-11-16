@@ -27,7 +27,7 @@ class WeathersModel
      */
     public function getWeathers()
     {
-        $sql = "SELECT w.weather_id, w.city_id, w.temperature, w.weather, w.precipitation, w.humidity, w.wind, w.date
+        $sql = "SELECT w.weather_id, c.city_id, c.country, c.city_label, w.temperature, w.weather, w.precipitation, w.humidity, w.wind, w.date
                 FROM " . $this->table . " w
                 LEFT JOIN city c ON w.city_id = c.city_id
                 WHERE c.city_id = ?
@@ -35,9 +35,7 @@ class WeathersModel
 
         $query = $this->connexion->prepare($sql);
         $query->bindParam(1, $this->city_id);
-
         $query->execute();
-
         return $query;
     }
 
